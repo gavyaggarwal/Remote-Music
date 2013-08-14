@@ -1,0 +1,216 @@
+body {
+	background: transparent url(bg.png) repeat fixed center center;
+	color: #FAFAFA;
+	text-shadow: 0px -1px 1px #666;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+}
+#background {
+	background: #FF8C00;
+	background: -webkit-linear-gradient(45deg, #FF8C00, #FF6600);
+	background: linear-gradient(45deg, #FF8C00, #FF6600);
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.7;
+	z-index: -1;
+}
+#header {
+	font-family: "Kaushan Script", "Helvetica", sans-serif;
+	font-size: 2.5em;
+	width:800px;
+	margin: 10px auto;
+	line-height: 54px;
+	padding: 0;
+}
+#icon-container {
+	width: 48px;
+	height: 48px;
+	border: 3px solid #FAFAFA;
+	background-color: #FAFAFA;
+	border-radius: 9px;
+	display: inline-block;
+	float: left;
+	box-shadow: 0px -0.5px 1px black;
+}
+#content {
+	width: 800px;
+	margin: 10px auto;
+	font-size: 0.9em;
+	padding: 20px 0px
+}
+#loading-list {
+	width:50%;
+	height:70px;
+	margin:20px auto;
+}
+#menu {
+	padding: 0;
+	text-align: center;
+	display: none;
+	opacity: 0;
+}
+#menu span {
+	width: 18%;
+	display: inline-block;
+	text-align: center;
+	margin:0;
+}
+#menu #searchfield {
+	text-align:center;
+	font-size:10px;
+	border-radius:8px;
+	border:1px solid #999;
+	height:16px;
+	color:#999;
+	background:#FAFAFA;
+	width:75%;
+}
+#music-content {
+	width: 100%;
+	display: none;
+	opacity: 0;
+}
+#library-table {
+	margin: 10px;
+	width: 250px;
+	display: inline-block;
+	border: 1px solid #DDD;
+	background: #FAFAFA;
+	border-radius: 10px;
+	color:#666;
+	font-weight: 100;
+	text-shadow: 0px 0px 0px black;
+}
+#library-table tr {
+	width: 100%;
+}
+#library-table td {
+	border-bottom: 1px solid #CCC;
+	width: 250px;
+	padding: 5px 10px;
+	cursor: pointer;
+	position: relative;
+}
+#library-table tr:last-child td {
+	border-bottom: 0px;
+}
+#library-table td:hover .title {
+	text-decoration: underline;
+}
+#library-table span {
+	display: block;
+	width: 200px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.title {
+	font-size: 1em;
+}
+.subtitle {
+	font-size: .8em;
+}
+#library-table img {
+	z-index:435;
+	height:12px;
+	width:10px;
+	position: absolute;
+	right: 5px;
+	top:50%;
+	margin-top:-6px;
+}
+#current-song {
+	width: 250px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px 0px;
+	text-align: center;
+	overflow: hidden;
+}
+#current-song span {
+	display: block;
+	width: 100%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+#current-song #header {
+	font-family: "Kaushan Script", "Helvetica", sans-serif;
+	font-size: 2.5em;
+}
+#current-song #controls {
+	opacity: 0.0;
+}
+#processes, #playlist {
+	font-size: 0.9em;
+	border-width: 0px;
+}
+#processes td:first-child {
+	text-align: left;
+	width: 190px;
+}
+#processes td:last-child {
+	width: 50px;
+	text-align: right;
+}
+#processes span {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+	width: 190px;
+}
+#playlist .outer {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+	width: 250px;
+}
+#song-status {
+	width: 240px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px;
+	text-align: center;
+	overflow: hidden;
+}
+.slider-track {
+	width: 200px;
+	height: 6px;
+	background: #FAFAFA;
+	border-radius: 5px;
+	border: 1px solid #666;
+	margin: 5px auto;
+	padding: 0px;
+	text-align: left;
+	box-shadow: 0px 1px 1px #666;
+}
+.slider-head {
+	width: 6px;
+	height: 6px;
+	background: #FF8C00;
+	border-radius: 4px;
+	border-width: 0px;
+}
+#artwork-image {
+	width: 200px;
+	margin: 10px auto;
+	border: 5px solid #FAFAFA;
+	border-radius: 5px;
+	box-shadow: 0px 1px 1px #666;
+}
+#footer {
+	width: 800px;
+	margin: 10px auto;
+	text-align: center;
+	font-size: 0.8em;
+}
+a {
+	color: white;
+}
+a:hover {
+	text-decoration: none;
+}

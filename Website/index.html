@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Remote Music Webconnect</title>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+	@font-face {
+	  	font-family: 'Kaushan Script';
+	  	font-style: normal;
+	  	font-weight: 400;
+	  	src: local('Kaushan Script'), local('KaushanScript-Regular'), url(kaushan-script.woff) format('woff');
+	}
+  </style>
+  <script type="text/javascript" src="jquery.js"></script>
+  <script type="text/javascript" src="jplayer.js"></script>
+  <script type="text/javascript" src="jplayer.playlist.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+ </head>
+ <body>
+  <div id="background"></div>
+  <div id="header">
+    <div id="icon-container">
+     <img src="icon.png" style="width:48px;height:48px;" alt="" />
+    </div>
+    <span>&nbsp;Remote Music</span>
+    <span style="float:right;">Webconnect</span>
+  </div>
+  <div id="content">
+   <ul id="loading-list">
+    <li>Connecting to %devicename%</li>
+   </ul>
+   <div id="menu">
+    <span>
+     <a href="javascript:getPlaylists()">Playlists</a>
+    </span>
+    <span>
+     <a href="javascript:getArtists()">Artists</a>
+    </span>
+    <span>
+     <a href="javascript:getSongs()">Songs</a>
+    </span>
+    <span>
+     <a href="javascript:getAlbums()">Albums</a>
+    </span>
+    <span>
+     <input type="text" value="Search" id="searchfield" />
+    </span>
+   </div>
+   <div id="music-content">
+    <table id="library-table"></table>
+    <div id="current-song">
+	 <span id="header"></span>
+	 <div id="controls">
+	  <img src="reverse.png" onclick="javascript:previousSong();" />
+	  &nbsp;&nbsp;&nbsp;
+	  <img src="play.png" id="play" style="display:none" onclick="javascript:playSong();" />
+	  <img src="pause.png" id="pause" onclick="javascript:pauseSong();" />
+	  &nbsp;&nbsp;&nbsp;
+	  <img src="forward.png" onclick="javascript:nextSong();" />
+	  <br />
+	  <div class="slider-track" style="background:#CCC;position:relative;">
+	   <div class="slider-head" id="progress-slider" style="width:0px;position:absolute;top:0;z-index:2;"></div>
+	   <div class="slider-head" id="buffer-slider" style="position:absolute;top:0;width:0px;background:#FAFAFA"></div>
+	  </div>
+	 </div>
+	 <br />
+	 <span id="current-title" style="font-size:1.3em;"></span>
+	 <span id="current-artist" style="font-size:1.1em;"></span>
+	 <span id="current-album" style="font-size:0.9em;"></span>
+	 <br />
+	 <br />
+	 <br />
+	 Queued Songs
+	 <table id="playlist"></table>
+	 <br />
+	 <br />
+	 <br />
+	 Ongoing Tasks
+	 <table id="processes"></table>
+	 <div id="jplayer"></div>
+    </div>
+    <div id="song-status">
+     <div id="artwork">
+      <img id="artwork-image" src="no-artwork.png" />
+     </div>
+    </div>
+    <br style="clear:both" />
+   </div>
+  </div>
+  <div id="footer">
+   Hosted on %devicename%
+   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   Remote Music %appversion%
+   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="mailto:remotemusic@feistapps.com">Support</a>
+   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   Copyright 2013 Feist Apps
+  </div>
+ </body>
+</html>

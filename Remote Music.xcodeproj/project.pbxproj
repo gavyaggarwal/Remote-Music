@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8514D37F17B6D08600161380 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8514D37E17B6D08600161380 /* StoreKit.framework */; };
+		852AC9EB17BAFB0F00846BD2 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 852AC9EA17BAFB0F00846BD2 /* background.jpg */; };
+		852AC9F317BB009D00846BD2 /* libGoogleAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 852AC9F217BB009D00846BD2 /* libGoogleAnalytics.a */; };
+		852AC9F517BB014700846BD2 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852AC9F417BB014700846BD2 /* CoreData.framework */; };
+		8547500917B5FC48002A24E3 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8547500817B5FC48002A24E3 /* Accounts.framework */; };
+		85657CEA17B848EF006B04D6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85657CE917B848EF006B04D6 /* SystemConfiguration.framework */; };
+		856CCA0B17B6FA8D0076D976 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856CCA0A17B6FA8D0076D976 /* MessageUI.framework */; };
+		856CCA0D17B6FCEA0076D976 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856CCA0C17B6FCEA0076D976 /* Social.framework */; };
+		85718054179F8AC6006F69D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85718053179F8AC6006F69D4 /* UIKit.framework */; };
+		85718056179F8AC6006F69D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85718055179F8AC6006F69D4 /* Foundation.framework */; };
+		85718058179F8AC6006F69D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85718057179F8AC6006F69D4 /* CoreGraphics.framework */; };
+		8571805E179F8AC6006F69D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8571805C179F8AC6006F69D4 /* InfoPlist.strings */; };
+		85718060179F8AC6006F69D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571805F179F8AC6006F69D4 /* main.m */; };
+		85718064179F8AC6006F69D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85718063179F8AC6006F69D4 /* AppDelegate.m */; };
+		8571806D179F8AC6006F69D4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8571806B179F8AC6006F69D4 /* MainStoryboard.storyboard */; };
+		85718070179F8AC6006F69D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8571806F179F8AC6006F69D4 /* ViewController.m */; };
+		85718078179F8AC6006F69D4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85718077179F8AC6006F69D4 /* SenTestingKit.framework */; };
+		85718079179F8AC6006F69D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85718053179F8AC6006F69D4 /* UIKit.framework */; };
+		8571807A179F8AC6006F69D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85718055179F8AC6006F69D4 /* Foundation.framework */; };
+		85718082179F8AC6006F69D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 85718080179F8AC6006F69D4 /* InfoPlist.strings */; };
+		85718085179F8AC6006F69D4 /* Remote_MusicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85718084179F8AC6006F69D4 /* Remote_MusicTests.m */; };
+		85718098179F8B17006F69D4 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85718090179F8B17006F69D4 /* GCDWebServer.m */; };
+		85718099179F8B17006F69D4 /* GCDWebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 85718090179F8B17006F69D4 /* GCDWebServer.m */; };
+		8571809A179F8B17006F69D4 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 85718092179F8B17006F69D4 /* GCDWebServerConnection.m */; };
+		8571809B179F8B17006F69D4 /* GCDWebServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 85718092179F8B17006F69D4 /* GCDWebServerConnection.m */; };
+		8571809C179F8B17006F69D4 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 85718095179F8B17006F69D4 /* GCDWebServerRequest.m */; };
+		8571809D179F8B17006F69D4 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 85718095179F8B17006F69D4 /* GCDWebServerRequest.m */; };
+		8571809E179F8B17006F69D4 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 85718097179F8B17006F69D4 /* GCDWebServerResponse.m */; };
+		8571809F179F8B17006F69D4 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 85718097179F8B17006F69D4 /* GCDWebServerResponse.m */; };
+		857180A1179F8B2B006F69D4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857180A0179F8B2B006F69D4 /* CFNetwork.framework */; };
+		857180A3179F8B34006F69D4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857180A2179F8B34006F69D4 /* MobileCoreServices.framework */; };
+		857180A6179F8CB7006F69D4 /* WebServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 857180A5179F8CB7006F69D4 /* WebServer.m */; };
+		857180A8179F8FD0006F69D4 /* Website in Resources */ = {isa = PBXBuildFile; fileRef = 857180A7179F8FD0006F69D4 /* Website */; };
+		857180AA179F9488006F69D4 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857180A9179F9488006F69D4 /* MediaPlayer.framework */; };
+		857180AD179F94FD006F69D4 /* MusicLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 857180AC179F94FD006F69D4 /* MusicLibrary.m */; };
+		857180B017A190DC006F69D4 /* Exporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 857180AF17A190DB006F69D4 /* Exporter.m */; };
+		857180B217A1AB45006F69D4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 857180B117A1AB45006F69D4 /* AVFoundation.framework */; };
+		8572FF7617B83DE400F5859D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 8572FF7517B83DE400F5859D /* Reachability.m */; };
+		8577C14D17B2B7A000CE4267 /* left-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8577C14B17B2B7A000CE4267 /* left-arrow.png */; };
+		8577C14E17B2B7A000CE4267 /* right-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 8577C14C17B2B7A000CE4267 /* right-arrow.png */; };
+		8580CF0A17BC033700648FAC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8580CEFF17BC033700648FAC /* Default-568h@2x.png */; };
+		8580CF0B17BC033700648FAC /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8580CF0017BC033700648FAC /* Default-Landscape@2x~ipad.png */; };
+		8580CF0C17BC033700648FAC /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8580CF0117BC033700648FAC /* Default-Landscape~ipad.png */; };
+		8580CF0D17BC033700648FAC /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8580CF0217BC033700648FAC /* Default-Portrait@2x~ipad.png */; };
+		8580CF0E17BC033700648FAC /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 8580CF0317BC033700648FAC /* Default-Portrait~ipad.png */; };
+		8580CF0F17BC033700648FAC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8580CF0417BC033700648FAC /* Default.png */; };
+		8580CF1017BC033700648FAC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8580CF0517BC033700648FAC /* Default@2x.png */; };
+		8580CF1117BC033700648FAC /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 8580CF0617BC033700648FAC /* Icon-72.png */; };
+		8580CF1217BC033700648FAC /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8580CF0717BC033700648FAC /* Icon-72@2x.png */; };
+		8580CF1317BC033700648FAC /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8580CF0817BC033700648FAC /* Icon.png */; };
+		8580CF1417BC033700648FAC /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8580CF0917BC033700648FAC /* Icon@2x.png */; };
+		8590FE2717B68D4A001DEA6E /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8590FE2617B68D4A001DEA6E /* iAd.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8571807B179F8AC6006F69D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85718048179F8AC6006F69D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8571804F179F8AC6006F69D4;
+			remoteInfo = "Remote Music";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8514D37E17B6D08600161380 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		852AC9EA17BAFB0F00846BD2 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = Media/background.jpg; sourceTree = SOURCE_ROOT; };
+		852AC9ED17BB009D00846BD2 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		852AC9EE17BB009D00846BD2 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		852AC9EF17BB009D00846BD2 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		852AC9F017BB009D00846BD2 /* GAITransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITransaction.h; sourceTree = "<group>"; };
+		852AC9F117BB009D00846BD2 /* GAITransactionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITransactionItem.h; sourceTree = "<group>"; };
+		852AC9F217BB009D00846BD2 /* libGoogleAnalytics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics.a; sourceTree = "<group>"; };
+		852AC9F417BB014700846BD2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		8547500617B5BD15002A24E3 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		8547500817B5FC48002A24E3 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		85657CE917B848EF006B04D6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		856CCA0A17B6FA8D0076D976 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		856CCA0C17B6FCEA0076D976 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		85718050179F8AC6006F69D4 /* Remote Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Remote Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85718053179F8AC6006F69D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		85718055179F8AC6006F69D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		85718057179F8AC6006F69D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8571805B179F8AC6006F69D4 /* Remote Music-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Remote Music-Info.plist"; sourceTree = "<group>"; };
+		8571805D179F8AC6006F69D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8571805F179F8AC6006F69D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		85718061179F8AC6006F69D4 /* Remote Music-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Remote Music-Prefix.pch"; sourceTree = "<group>"; };
+		85718062179F8AC6006F69D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		85718063179F8AC6006F69D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8571806C179F8AC6006F69D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		8571806E179F8AC6006F69D4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8571806F179F8AC6006F69D4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		85718076179F8AC6006F69D4 /* Remote MusicTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Remote MusicTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		85718077179F8AC6006F69D4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8571807F179F8AC6006F69D4 /* Remote MusicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Remote MusicTests-Info.plist"; sourceTree = "<group>"; };
+		85718081179F8AC6006F69D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		85718083179F8AC6006F69D4 /* Remote_MusicTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Remote_MusicTests.h; sourceTree = "<group>"; };
+		85718084179F8AC6006F69D4 /* Remote_MusicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Remote_MusicTests.m; sourceTree = "<group>"; };
+		8571808F179F8B17006F69D4 /* GCDWebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServer.h; sourceTree = "<group>"; };
+		85718090179F8B17006F69D4 /* GCDWebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServer.m; sourceTree = "<group>"; };
+		85718091179F8B17006F69D4 /* GCDWebServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerConnection.h; sourceTree = "<group>"; };
+		85718092179F8B17006F69D4 /* GCDWebServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerConnection.m; sourceTree = "<group>"; };
+		85718093179F8B17006F69D4 /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerPrivate.h; sourceTree = "<group>"; };
+		85718094179F8B17006F69D4 /* GCDWebServerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerRequest.h; sourceTree = "<group>"; };
+		85718095179F8B17006F69D4 /* GCDWebServerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerRequest.m; sourceTree = "<group>"; };
+		85718096179F8B17006F69D4 /* GCDWebServerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerResponse.h; sourceTree = "<group>"; };
+		85718097179F8B17006F69D4 /* GCDWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerResponse.m; sourceTree = "<group>"; };
+		857180A0179F8B2B006F69D4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		857180A2179F8B34006F69D4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		857180A4179F8CB7006F69D4 /* WebServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServer.h; sourceTree = "<group>"; };
+		857180A5179F8CB7006F69D4 /* WebServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServer.m; sourceTree = "<group>"; };
+		857180A7179F8FD0006F69D4 /* Website */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Website; sourceTree = SOURCE_ROOT; };
+		857180A9179F9488006F69D4 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		857180AB179F94FD006F69D4 /* MusicLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicLibrary.h; sourceTree = "<group>"; };
+		857180AC179F94FD006F69D4 /* MusicLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicLibrary.m; sourceTree = "<group>"; };
+		857180AE17A190DB006F69D4 /* Exporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exporter.h; sourceTree = "<group>"; };
+		857180AF17A190DB006F69D4 /* Exporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exporter.m; sourceTree = "<group>"; };
+		857180B117A1AB45006F69D4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		8572FF7417B83DE400F5859D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		8572FF7517B83DE400F5859D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		8577C14B17B2B7A000CE4267 /* left-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "left-arrow.png"; path = "Media/left-arrow.png"; sourceTree = SOURCE_ROOT; };
+		8577C14C17B2B7A000CE4267 /* right-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "right-arrow.png"; path = "Media/right-arrow.png"; sourceTree = SOURCE_ROOT; };
+		8580CEFF17BC033700648FAC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Media/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		8580CF0017BC033700648FAC /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "Media/Default-Landscape@2x~ipad.png"; sourceTree = SOURCE_ROOT; };
+		8580CF0117BC033700648FAC /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "Media/Default-Landscape~ipad.png"; sourceTree = SOURCE_ROOT; };
+		8580CF0217BC033700648FAC /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~ipad.png"; path = "Media/Default-Portrait@2x~ipad.png"; sourceTree = SOURCE_ROOT; };
+		8580CF0317BC033700648FAC /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~ipad.png"; path = "Media/Default-Portrait~ipad.png"; sourceTree = SOURCE_ROOT; };
+		8580CF0417BC033700648FAC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Media/Default.png; sourceTree = SOURCE_ROOT; };
+		8580CF0517BC033700648FAC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Media/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		8580CF0617BC033700648FAC /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "Media/Icon-72.png"; sourceTree = SOURCE_ROOT; };
+		8580CF0717BC033700648FAC /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72@2x.png"; path = "Media/Icon-72@2x.png"; sourceTree = SOURCE_ROOT; };
+		8580CF0817BC033700648FAC /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Media/Icon.png; sourceTree = SOURCE_ROOT; };
+		8580CF0917BC033700648FAC /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Media/Icon@2x.png"; sourceTree = SOURCE_ROOT; };
+		8590FE2617B68D4A001DEA6E /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8571804D179F8AC6006F69D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852AC9F517BB014700846BD2 /* CoreData.framework in Frameworks */,
+				85657CEA17B848EF006B04D6 /* SystemConfiguration.framework in Frameworks */,
+				856CCA0D17B6FCEA0076D976 /* Social.framework in Frameworks */,
+				856CCA0B17B6FA8D0076D976 /* MessageUI.framework in Frameworks */,
+				8514D37F17B6D08600161380 /* StoreKit.framework in Frameworks */,
+				8590FE2717B68D4A001DEA6E /* iAd.framework in Frameworks */,
+				8547500917B5FC48002A24E3 /* Accounts.framework in Frameworks */,
+				857180B217A1AB45006F69D4 /* AVFoundation.framework in Frameworks */,
+				857180AA179F9488006F69D4 /* MediaPlayer.framework in Frameworks */,
+				857180A3179F8B34006F69D4 /* MobileCoreServices.framework in Frameworks */,
+				857180A1179F8B2B006F69D4 /* CFNetwork.framework in Frameworks */,
+				85718054179F8AC6006F69D4 /* UIKit.framework in Frameworks */,
+				85718056179F8AC6006F69D4 /* Foundation.framework in Frameworks */,
+				85718058179F8AC6006F69D4 /* CoreGraphics.framework in Frameworks */,
+				852AC9F317BB009D00846BD2 /* libGoogleAnalytics.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85718072179F8AC6006F69D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85718078179F8AC6006F69D4 /* SenTestingKit.framework in Frameworks */,
+				85718079179F8AC6006F69D4 /* UIKit.framework in Frameworks */,
+				8571807A179F8AC6006F69D4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		852AC9EC17BB009D00846BD2 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				852AC9ED17BB009D00846BD2 /* GAI.h */,
+				852AC9EE17BB009D00846BD2 /* GAITrackedViewController.h */,
+				852AC9EF17BB009D00846BD2 /* GAITracker.h */,
+				852AC9F017BB009D00846BD2 /* GAITransaction.h */,
+				852AC9F117BB009D00846BD2 /* GAITransactionItem.h */,
+				852AC9F217BB009D00846BD2 /* libGoogleAnalytics.a */,
+			);
+			path = Analytics;
+			sourceTree = SOURCE_ROOT;
+		};
+		85718047179F8AC6006F69D4 = {
+			isa = PBXGroup;
+			children = (
+				85718059179F8AC6006F69D4 /* Remote Music */,
+				8571807D179F8AC6006F69D4 /* Remote MusicTests */,
+				85718052179F8AC6006F69D4 /* Frameworks */,
+				85718051179F8AC6006F69D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85718051179F8AC6006F69D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85718050179F8AC6006F69D4 /* Remote Music.app */,
+				85718076179F8AC6006F69D4 /* Remote MusicTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85718052179F8AC6006F69D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				852AC9F417BB014700846BD2 /* CoreData.framework */,
+				85657CE917B848EF006B04D6 /* SystemConfiguration.framework */,
+				856CCA0C17B6FCEA0076D976 /* Social.framework */,
+				856CCA0A17B6FA8D0076D976 /* MessageUI.framework */,
+				8514D37E17B6D08600161380 /* StoreKit.framework */,
+				8547500817B5FC48002A24E3 /* Accounts.framework */,
+				8590FE2617B68D4A001DEA6E /* iAd.framework */,
+				8547500617B5BD15002A24E3 /* Twitter.framework */,
+				857180B117A1AB45006F69D4 /* AVFoundation.framework */,
+				857180A9179F9488006F69D4 /* MediaPlayer.framework */,
+				857180A0179F8B2B006F69D4 /* CFNetwork.framework */,
+				857180A2179F8B34006F69D4 /* MobileCoreServices.framework */,
+				85718053179F8AC6006F69D4 /* UIKit.framework */,
+				85718055179F8AC6006F69D4 /* Foundation.framework */,
+				85718057179F8AC6006F69D4 /* CoreGraphics.framework */,
+				85718077179F8AC6006F69D4 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85718059179F8AC6006F69D4 /* Remote Music */ = {
+			isa = PBXGroup;
+			children = (
+				85718062179F8AC6006F69D4 /* AppDelegate.h */,
+				85718063179F8AC6006F69D4 /* AppDelegate.m */,
+				8571806B179F8AC6006F69D4 /* MainStoryboard.storyboard */,
+				8571806E179F8AC6006F69D4 /* ViewController.h */,
+				8571806F179F8AC6006F69D4 /* ViewController.m */,
+				857180A4179F8CB7006F69D4 /* WebServer.h */,
+				857180A5179F8CB7006F69D4 /* WebServer.m */,
+				857180AB179F94FD006F69D4 /* MusicLibrary.h */,
+				857180AC179F94FD006F69D4 /* MusicLibrary.m */,
+				857180AE17A190DB006F69D4 /* Exporter.h */,
+				857180AF17A190DB006F69D4 /* Exporter.m */,
+				8572FF7417B83DE400F5859D /* Reachability.h */,
+				8572FF7517B83DE400F5859D /* Reachability.m */,
+				852AC9EA17BAFB0F00846BD2 /* background.jpg */,
+				8577C14B17B2B7A000CE4267 /* left-arrow.png */,
+				8577C14C17B2B7A000CE4267 /* right-arrow.png */,
+				857180A7179F8FD0006F69D4 /* Website */,
+				8571808E179F8B17006F69D4 /* CGDWebServer */,
+				852AC9EC17BB009D00846BD2 /* Analytics */,
+				8571805A179F8AC6006F69D4 /* Supporting Files */,
+			);
+			path = "Remote Music";
+			sourceTree = "<group>";
+		};
+		8571805A179F8AC6006F69D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8580CF1517BC036200648FAC /* Required Images */,
+				8571805B179F8AC6006F69D4 /* Remote Music-Info.plist */,
+				8571805C179F8AC6006F69D4 /* InfoPlist.strings */,
+				8571805F179F8AC6006F69D4 /* main.m */,
+				85718061179F8AC6006F69D4 /* Remote Music-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8571807D179F8AC6006F69D4 /* Remote MusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				85718083179F8AC6006F69D4 /* Remote_MusicTests.h */,
+				85718084179F8AC6006F69D4 /* Remote_MusicTests.m */,
+				8571807E179F8AC6006F69D4 /* Supporting Files */,
+			);
+			path = "Remote MusicTests";
+			sourceTree = "<group>";
+		};
+		8571807E179F8AC6006F69D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8571807F179F8AC6006F69D4 /* Remote MusicTests-Info.plist */,
+				85718080179F8AC6006F69D4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8571808E179F8B17006F69D4 /* CGDWebServer */ = {
+			isa = PBXGroup;
+			children = (
+				8571808F179F8B17006F69D4 /* GCDWebServer.h */,
+				85718090179F8B17006F69D4 /* GCDWebServer.m */,
+				85718091179F8B17006F69D4 /* GCDWebServerConnection.h */,
+				85718092179F8B17006F69D4 /* GCDWebServerConnection.m */,
+				85718093179F8B17006F69D4 /* GCDWebServerPrivate.h */,
+				85718094179F8B17006F69D4 /* GCDWebServerRequest.h */,
+				85718095179F8B17006F69D4 /* GCDWebServerRequest.m */,
+				85718096179F8B17006F69D4 /* GCDWebServerResponse.h */,
+				85718097179F8B17006F69D4 /* GCDWebServerResponse.m */,
+			);
+			path = CGDWebServer;
+			sourceTree = SOURCE_ROOT;
+		};
+		8580CF1517BC036200648FAC /* Required Images */ = {
+			isa = PBXGroup;
+			children = (
+				8580CEFF17BC033700648FAC /* Default-568h@2x.png */,
+				8580CF0017BC033700648FAC /* Default-Landscape@2x~ipad.png */,
+				8580CF0117BC033700648FAC /* Default-Landscape~ipad.png */,
+				8580CF0217BC033700648FAC /* Default-Portrait@2x~ipad.png */,
+				8580CF0317BC033700648FAC /* Default-Portrait~ipad.png */,
+				8580CF0417BC033700648FAC /* Default.png */,
+				8580CF0517BC033700648FAC /* Default@2x.png */,
+				8580CF0617BC033700648FAC /* Icon-72.png */,
+				8580CF0717BC033700648FAC /* Icon-72@2x.png */,
+				8580CF0817BC033700648FAC /* Icon.png */,
+				8580CF0917BC033700648FAC /* Icon@2x.png */,
+			);
+			name = "Required Images";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8571804F179F8AC6006F69D4 /* Remote Music */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85718088179F8AC6006F69D4 /* Build configuration list for PBXNativeTarget "Remote Music" */;
+			buildPhases = (
+				8571804C179F8AC6006F69D4 /* Sources */,
+				8571804D179F8AC6006F69D4 /* Frameworks */,
+				8571804E179F8AC6006F69D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Remote Music";
+			productName = "Remote Music";
+			productReference = 85718050179F8AC6006F69D4 /* Remote Music.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85718075179F8AC6006F69D4 /* Remote MusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8571808B179F8AC6006F69D4 /* Build configuration list for PBXNativeTarget "Remote MusicTests" */;
+			buildPhases = (
+				85718071179F8AC6006F69D4 /* Sources */,
+				85718072179F8AC6006F69D4 /* Frameworks */,
+				85718073179F8AC6006F69D4 /* Resources */,
+				85718074179F8AC6006F69D4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8571807C179F8AC6006F69D4 /* PBXTargetDependency */,
+			);
+			name = "Remote MusicTests";
+			productName = "Remote MusicTests";
+			productReference = 85718076179F8AC6006F69D4 /* Remote MusicTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85718048179F8AC6006F69D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Gavy Aggarwal";
+			};
+			buildConfigurationList = 8571804B179F8AC6006F69D4 /* Build configuration list for PBXProject "Remote Music" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 85718047179F8AC6006F69D4;
+			productRefGroup = 85718051179F8AC6006F69D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8571804F179F8AC6006F69D4 /* Remote Music */,
+				85718075179F8AC6006F69D4 /* Remote MusicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8571804E179F8AC6006F69D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8571805E179F8AC6006F69D4 /* InfoPlist.strings in Resources */,
+				8571806D179F8AC6006F69D4 /* MainStoryboard.storyboard in Resources */,
+				857180A8179F8FD0006F69D4 /* Website in Resources */,
+				8577C14D17B2B7A000CE4267 /* left-arrow.png in Resources */,
+				8577C14E17B2B7A000CE4267 /* right-arrow.png in Resources */,
+				852AC9EB17BAFB0F00846BD2 /* background.jpg in Resources */,
+				8580CF0A17BC033700648FAC /* Default-568h@2x.png in Resources */,
+				8580CF0B17BC033700648FAC /* Default-Landscape@2x~ipad.png in Resources */,
+				8580CF0C17BC033700648FAC /* Default-Landscape~ipad.png in Resources */,
+				8580CF0D17BC033700648FAC /* Default-Portrait@2x~ipad.png in Resources */,
+				8580CF0E17BC033700648FAC /* Default-Portrait~ipad.png in Resources */,
+				8580CF0F17BC033700648FAC /* Default.png in Resources */,
+				8580CF1017BC033700648FAC /* Default@2x.png in Resources */,
+				8580CF1117BC033700648FAC /* Icon-72.png in Resources */,
+				8580CF1217BC033700648FAC /* Icon-72@2x.png in Resources */,
+				8580CF1317BC033700648FAC /* Icon.png in Resources */,
+				8580CF1417BC033700648FAC /* Icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85718073179F8AC6006F69D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85718082179F8AC6006F69D4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		85718074179F8AC6006F69D4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8571804C179F8AC6006F69D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85718060179F8AC6006F69D4 /* main.m in Sources */,
+				85718064179F8AC6006F69D4 /* AppDelegate.m in Sources */,
+				85718070179F8AC6006F69D4 /* ViewController.m in Sources */,
+				85718098179F8B17006F69D4 /* GCDWebServer.m in Sources */,
+				8571809A179F8B17006F69D4 /* GCDWebServerConnection.m in Sources */,
+				8571809C179F8B17006F69D4 /* GCDWebServerRequest.m in Sources */,
+				8571809E179F8B17006F69D4 /* GCDWebServerResponse.m in Sources */,
+				857180A6179F8CB7006F69D4 /* WebServer.m in Sources */,
+				857180AD179F94FD006F69D4 /* MusicLibrary.m in Sources */,
+				857180B017A190DC006F69D4 /* Exporter.m in Sources */,
+				8572FF7617B83DE400F5859D /* Reachability.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85718071179F8AC6006F69D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85718085179F8AC6006F69D4 /* Remote_MusicTests.m in Sources */,
+				85718099179F8B17006F69D4 /* GCDWebServer.m in Sources */,
+				8571809B179F8B17006F69D4 /* GCDWebServerConnection.m in Sources */,
+				8571809D179F8B17006F69D4 /* GCDWebServerRequest.m in Sources */,
+				8571809F179F8B17006F69D4 /* GCDWebServerResponse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8571807C179F8AC6006F69D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8571804F179F8AC6006F69D4 /* Remote Music */;
+			targetProxy = 8571807B179F8AC6006F69D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8571805C179F8AC6006F69D4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8571805D179F8AC6006F69D4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8571806B179F8AC6006F69D4 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8571806C179F8AC6006F69D4 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		85718080179F8AC6006F69D4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				85718081179F8AC6006F69D4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		85718086179F8AC6006F69D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Gavy Aggarwal (3PZAT8JVF6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Gavy Aggarwal (3PZAT8JVF6)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "4E9D4DB7-20E1-4CA5-A856-3688A8180821";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4E9D4DB7-20E1-4CA5-A856-3688A8180821";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		85718087179F8AC6006F69D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Gavy Aggarwal";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Gavy Aggarwal";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "2F9E52FF-1D93-4125-A392-1895D85CCDEB";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2997B911-BFE4-41E2-8C31-4063FD44B15D";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85718089179F8AC6006F69D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Remote Music/Remote Music-Prefix.pch";
+				INFOPLIST_FILE = "Remote Music/Remote Music-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Analytics\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8571808A179F8AC6006F69D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Remote Music/Remote Music-Prefix.pch";
+				INFOPLIST_FILE = "Remote Music/Remote Music-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Analytics\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8571808C179F8AC6006F69D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Remote Music.app/Remote Music";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Remote Music/Remote Music-Prefix.pch";
+				INFOPLIST_FILE = "Remote MusicTests/Remote MusicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		8571808D179F8AC6006F69D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Remote Music.app/Remote Music";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Remote Music/Remote Music-Prefix.pch";
+				INFOPLIST_FILE = "Remote MusicTests/Remote MusicTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8571804B179F8AC6006F69D4 /* Build configuration list for PBXProject "Remote Music" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85718086179F8AC6006F69D4 /* Debug */,
+				85718087179F8AC6006F69D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85718088179F8AC6006F69D4 /* Build configuration list for PBXNativeTarget "Remote Music" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85718089179F8AC6006F69D4 /* Debug */,
+				8571808A179F8AC6006F69D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8571808B179F8AC6006F69D4 /* Build configuration list for PBXNativeTarget "Remote MusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8571808C179F8AC6006F69D4 /* Debug */,
+				8571808D179F8AC6006F69D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85718048179F8AC6006F69D4 /* Project object */;
+}
